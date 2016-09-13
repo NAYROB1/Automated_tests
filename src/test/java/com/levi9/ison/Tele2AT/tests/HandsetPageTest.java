@@ -30,7 +30,6 @@ public class HandsetPageTest extends BaseTest{
         prepaidSimOnlyPage = new PrepaidPage(getDriver());
     }
 
-
     @Test
     public void imageIsPresent(){
         cp.openCatalogPage();
