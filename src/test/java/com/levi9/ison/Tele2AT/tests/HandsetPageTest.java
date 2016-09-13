@@ -37,6 +37,7 @@ public class HandsetPageTest extends BaseTest{
         hsp.waitForPageToLoad();
 
         hsp.imageIsPresent();
+        hsp.waitForPageToLoad();
         Assert.assertEquals(hsp.imageIsPresent(), true, "Not present!");
     }
 
