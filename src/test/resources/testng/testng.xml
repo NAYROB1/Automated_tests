@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ison Example Tests with ReportNG" thread-count="2" verbose="1" annotations="JDK">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<!--<test name="BasePageExampleTest" junit="false" preserve-order="true">-->
+		<!--&lt;!&ndash;<parameter name="profile" value="${chrome.profile}" />&ndash;&gt;-->
+		<!--<classes>-->
+			<!--<class name="com.levi9.ison.Tele2AT.tests.Levi9Test"></class>-->
+		<!--</classes>-->
+	<!--</test>-->
+
+	<test name="HandsetPageTest" junit="false" preserve-order="true">
+		<parameter name="profile" value="chrome" />
+		<classes>
+			<class name="com.levi9.ison.Tele2AT.tests.TestClass"></class>
+		</classes>
+	</test>
+	<test name="HandsetPageTest1" junit="false" preserve-order="true">
+		<parameter name="profile" value="chrome" />
+		<classes>
+			<class name="com.levi9.ison.Tele2AT.tests.HandsetPageTest"></class>
+		</classes>
+	</test>
+</suite>
